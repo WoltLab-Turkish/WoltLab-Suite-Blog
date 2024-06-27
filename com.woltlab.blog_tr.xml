@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+	<category name="blog.acp.menu">
+		<item name="blog.acp.menu.link.blog"><![CDATA[Blog]]></item>
+		<item name="blog.acp.menu.link.blog.category.add"><![CDATA[Kategori Ekle]]></item>
+		<item name="blog.acp.menu.link.blog.category.list"><![CDATA[Kategoriler]]></item>
+	</category>
+	<category name="blog.blog">
+		<item name="blog.blog.about"><![CDATA[Blog Hakkında]]></item>
+		<item name="blog.blog.accessLevel"><![CDATA[Blogu Görebilme]]></item>
+		<item name="blog.blog.accessLevel.description"><![CDATA[Bu blog ve içerikleri sadece seçilen kullanıcılar tarafından erişilebilir olmalıdır.]]></item>
+		<item name="blog.blog.accessLevel.everyone"><![CDATA[Herkes]]></item>
+		<item name="blog.blog.accessLevel.following"><![CDATA[Takip Eden Kullanıcılar]]></item>
+		<item name="blog.blog.accessLevel.owner"><![CDATA[Sadece Ben]]></item>
+		<item name="blog.blog.accessLevel.registered"><![CDATA[Kayıtlı Kullanıcılar]]></item>
+		<item name="blog.blog.add"><![CDATA[Blog Oluştur]]></item>
+		<item name="blog.blog.archive"><![CDATA[Arşiv]]></item>
+		<item name="blog.blog.authors"><![CDATA[Ek Yazarlar]]></item>
+		<item name="blog.blog.authors.description"><![CDATA[İsteğe bağlı: Yeni makaleler oluşturabilir ve mevcutları düzenleyebilecek ek kullanıcılar ekleyebilirsiniz. Birden fazla kullanıcıyı virgülle ayırarak belirtin.]]></item>
+		<item name="blog.blog.authors.error.notFound"><![CDATA[“{$errorData[username]}” kullanıcı adı bulunamadı.]]></item>
+		<item name="blog.blog.boxList.description.cumulativeLikes"><![CDATA[]]></item>
+		<item name="blog.blog.boxList.description.lastUpdateTime"><![CDATA[{user object=$boxBlog->getUserProfile()} <span class="separatorLeft">{@$boxBlog->lastUpdateTime|time}</span>]]></item>
+		<item name="blog.blog.button.add"><![CDATA[Blog Oluştur]]></item>
+		<item name="blog.blog.button.sort"><![CDATA[Sırala]]></item>
+		<item name="blog.blog.condition.cumulativeLikes"><![CDATA[Reaksiyonlar]]></item>
+		<item name="blog.blog.delete"><![CDATA[Sil]]></item>
+		<item name="blog.blog.delete.confirmMessage"><![CDATA[Bu blogu gerçekten silmek istiyor musunuz?]]></item>
+		<item name="blog.blog.description.description"><![CDATA[Blogunuzun kısa bir açıklamasını girin, 500 karakteri geçmemelidir.]]></item>
+		<item name="blog.blog.description.error.tooLong"><![CDATA[Açıklama çok uzun, 500 karakterden az olmalıdır.]]></item>
+		<item name="blog.blog.edit"><![CDATA[Blogu Düzenle]]></item>
+		<item name="blog.blog.lastEntry"><![CDATA[En Son Makale]]></item>
+		<item name="blog.blog.lastUpdateTime"><![CDATA[En Son Güncelleme]]></item>
+		<item name="blog.blog.list"><![CDATA[Bloglar]]></item>
+		<item name="blog.blog.moreBlogs"><![CDATA[Daha Fazla Blog]]></item>
+		<item name="blog.blog.otherAuthor.entries"><![CDATA[{plural value=$otherAuthor->entries one='# makale' other='# makaleler'}]]></item>
+		<item name="blog.blog.searchAllBlogs"><![CDATA[Tüm Blogları Ara]]></item>
+		<item name="blog.blog.searchBlog"><![CDATA[Blog Ara]]></item>
+		<item name="blog.blog.showAll"><![CDATA[Tüm Blogları Göster]]></item>
+		<item name="blog.blog.sortField.cumulativeLikes"><![CDATA[Reaksiyonlar]]></item>
+		<item name="blog.blog.sortField.entries"><![CDATA[Makaleler]]></item>
+		<item name="blog.blog.sortField.lastUpdateTime"><![CDATA[En Son Güncelleme]]></item>
+		<item name="blog.blog.sortField.subscribers"><![CDATA[Aboneler]]></item>
+		<item name="blog.blog.sortField.title"><![CDATA[Başlık]]></item>
+		<item name="blog.blog.sortField.views"><![CDATA[Görüntüleme]]></item>
+		<item name="blog.blog.subscribers"><![CDATA[Aboneler]]></item>
+		<item name="blog.blog.subscribers.label"><![CDATA[{plural value=$blog->subscribers one='# Abone' other='# Aboneler'}]]></item>
+	</category>
+	<category name="blog.category">
+		<item name="blog.category.delete.sure"><![CDATA[Bu kategoriyi gerçekten silmek istiyor musunuz? Bu kategorinin tüm alt kategorileri, bu kategorinin üst kategorisine taşınacaktır. Bu kategoriye ait olan makaleler silinecektir.]]></item>
+	</category>
+	<category name="blog.entry">
+		<item name="blog.entry.add"><![CDATA[Blog Makalesi Oluştur]]></item>
+		<item name="blog.entry.bbcode.type"><![CDATA[Blog Makalesi]]></item>
+		<item name="blog.entry.blog"><![CDATA[Blog]]></item>
+		<item name="blog.entry.boxList.description.comments"><![CDATA[{plural value=$boxEntry->comments one='# Yorum' other='# Yorumlar'}]]></item>
+		<item name="blog.entry.boxList.description.time"><![CDATA[{user object=$boxEntry->getUserProfile()} <span class="separatorLeft">{@$boxEntry->time|time}</span>]]></item>
+		<item name="blog.entry.button.add"><![CDATA[Makale Oluştur]]></item>
+		<item name="blog.entry.button.publish"><![CDATA[Yayımla]]></item>
+		<item name="blog.entry.button.saveAsDraft"><![CDATA[Taslak Olarak Kaydet]]></item>
+		<item name="blog.entry.categories"><![CDATA[Kategoriler]]></item>
+		<item name="blog.entry.categories.error.tooMany"><![CDATA[Çok fazla kategori seçtiniz. En fazla {@BLOG_ENTRY_MAX_CATEGORIES} {if BLOG_ENTRY_MAX_CATEGORIES == 1}kategori{else}kategori{/if} seçebilirsiniz.]]></item>
+		<item name="blog.entry.categorizedEntries"><![CDATA[“{$category->getTitle()}” Kategorisindeki Blog Yazıları]]></item>
+		<item name="blog.entry.comment"><![CDATA[Blog Yazısı Yorumu]]></item>
+		<item name="blog.entry.comment.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.comment.like.notification.title"><![CDATA[Yorumunuza tepki (Blog Yazısı)]]></item>
+		<item name="blog.entry.comment.like.notification.title.stacked"><![CDATA[{#$count} kullanıcı yorumunuza tepki verdi (Blog Yazısı)]]></item>
+		<item name="blog.entry.comment.notification.mail.html"><![CDATA[<p>{@$authorList}, <a href="{$entry->getLink()}#comment{@$commentID}">{$entry->getTitle()}</a> başlıklı blog yazınıza yorum yaptı:</p>]]></item>
+		<item name="blog.entry.comment.notification.mail.plaintext"><![CDATA[{@$authorList}, “{@$entry->getTitle()}” başlıklı blog yazınıza yorum yaptı [URL:{@$entry->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="blog.entry.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if}, <strong>{$entry->getTitle()}</strong> başlıklı blog yazınıza yorum yaptı.]]></item>
+		<item name="blog.entry.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, <strong>{$entry->getTitle()}</strong> başlıklı blog yazınıza yorum yaptı.]]></item>
+		<item name="blog.entry.commentResponse"><![CDATA[Yorumunuza Yanıt]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza verdiğiniz yanıta tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza verdiğiniz yanıta tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.commentResponse.like.notification.title"><![CDATA[Yanıtınıza tepki (Blog Yazısı)]]></item>
+		<item name="blog.entry.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} kullanıcı yanıtınıza tepki verdi (Blog Yazısı)]]></item>
+		<item name="blog.entry.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList}, <a href="{$entry->getLink()}#comment{@$commentID}/response{@$responseID}">{$entry->getTitle()}</a> başlıklı blog yazınızdaki yorumunuza yanıt verdi:</p>]]></item>
+		<item name="blog.entry.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList}, “{@$entry->getTitle()}” başlıklı blog yazınızdaki yorumunuza yanıt verdi [URL:{@$entry->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="blog.entry.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if}, <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumunuza yanıt verdi.]]></item>
+		<item name="blog.entry.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumunuza yanıt verdi.]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList}, <strong>{$commentAuthor}</strong>’ün <a href="{$entry->getLink()}#comment{@$commentID}/response{@$responseID}">{$entry->getTitle()}</a> başlıklı blog yazınızdaki yorumuna yanıt verdi:</p>]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList}, {@$commentAuthor}’ün “{@$entry->getTitle()}” başlıklı blog yazınızdaki yorumuna yanıt verdi [URL:{@$entry->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if}, <strong>{$commentAuthor->username}</strong>’ün <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumuna yanıt verdi.]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, <strong>{$author->username}</strong>’ün <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumuna yanıt verdi.]]></item>
+		<item name="blog.entry.comments"><![CDATA[Yorumlar]]></item>
+		<item name="blog.entry.comments.count"><![CDATA[{plural value=$entry->comments one='# Yorum' other='# Yorumlar'}]]></item>
+		<item name="blog.entry.condition.blog"><![CDATA[Blog]]></item>
+		<item name="blog.entry.condition.comments"><![CDATA[Yorumlar]]></item>
+		<item name="blog.entry.condition.isFeatured"><![CDATA[Sadece öne çıkarılmış makaleler]]></item>
+		<item name="blog.entry.condition.timeFrame"><![CDATA[Yayımlanma Tarihi]]></item>
+		<item name="blog.entry.condition.timeFrame.description"><![CDATA[Bu seçenek, kutuda gösterilen makalelerin minimum ve maksimum yaşını gün cinsinden ayarlar.]]></item>
+		<item name="blog.entry.date"><![CDATA[Tarih]]></item>
+		<item name="blog.entry.date.error.invalid"><![CDATA[Belirlenen tarih geçersiz, tarih gelecekte olamaz.]]></item>
+		<item name="blog.entry.delayedPublication"><![CDATA[Makale {@$entry->publicationDate|plainTime} tarihinde yayımlanacak.]]></item>
+		<item name="blog.entry.delete"><![CDATA[Sil]]></item>
+		<item name="blog.entry.delete.confirmMessage"><![CDATA[Bu makaleyi gerçekten silmek istiyor musunuz?]]></item>
+		<item name="blog.entry.delete.success"><![CDATA[Makale silindi.]]></item>
+		<item name="blog.entry.disable"><![CDATA[Devre Dışı Bırak]]></item>
+		<item name="blog.entry.draft"><![CDATA[Taslak]]></item>
+		<item name="blog.entry.edit"><![CDATA[Blog Makalesini Düzenle]]></item>
+		<item name="blog.entry.editReason"><![CDATA[Düzenleme Nedeni (isteğe bağlı)]]></item>
+		<item name="blog.entry.enable"><![CDATA[Onayla]]></item>
+		<item name="blog.entry.enableComments"><![CDATA[Yorumları Etkinleştir]]></item>
+		<item name="blog.entry.enableComments.description"><![CDATA[Kullanıcıların bu makaleye yorum yapmasına izin verir.]]></item>
+		<item name="blog.entry.enableDelayedPublication"><![CDATA[Gecikmiş yayımlama]]></item>
+		<item name="blog.entry.entries"><![CDATA[Blog Yazıları]]></item>
+		<item name="blog.entry.entries.label"><![CDATA[{plural value=$blog->entries one='# Makale' other='# Makaleler'}]]></item>
+		<item name="blog.entry.featured"><![CDATA[Öne Çıkan]]></item>
+		<item name="blog.entry.hasOldVersions"><![CDATA[Bu blog yazısının kaydedilmiş önceki sürümleri bulunmaktadır.]]></item>
+		<item name="blog.entry.information"><![CDATA[Bilgi]]></item>
+		<item name="blog.entry.label.readMore"><![CDATA[Devamını oku [readmore]]]></item>
+		<item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınız <strong>{$entry->getTitle()}</strong> hakkında tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınız <strong>{$entry->getTitle()}</strong> hakkında tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.like.notification.title"><![CDATA[Blog yazınıza tepki]]></item>
+		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} kullanıcı blog yazınıza tepki verdi]]></item>
+		<item name="blog.entry.log.trash.summary"><![CDATA[Giriş, {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} aşağıdaki nedenle silindi: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
+		<item name="blog.entry.mention.notification.mail.html"><![CDATA[<p><strong>{$author}</strong>, sizi blog yazısı <a href="{$entry->getLink()}">{$entry->getTitle()}</a> içinde etiketledi:</p>]]></item>
+		<item name="blog.entry.mention.notification.mail.plaintext"><![CDATA[{@$author}, sizi “{@$entry->getTitle()}” başlıklı blog yazısında etiketledi [URL:{@$entry->getLink()}]:]]></item>
+		<item name="blog.entry.mention.notification.message"><![CDATA[<strong>{$author}</strong>, sizi blog yazısı <strong>{$entry->getTitle()}</strong> içinde etiketledi.]]></item>
+		<item name="blog.entry.mention.notification.title"><![CDATA[Siz etiketlendiniz]]></item>
+		<item name="blog.entry.message"><![CDATA[Mesaj]]></item>
+		<item name="blog.entry.moderation.info"><![CDATA[Yeni oluşturulan makaleler moderatör tarafından onaylanana kadar erişilemez durumda kalacaktır.]]></item>
+		<item name="blog.entry.moderation.redirect"><![CDATA[Makaleniz oluşturuldu ve onaylandıktan sonra gösterilecektir.]]></item>
+		<item name="blog.entry.moreEntries"><![CDATA[Daha Fazla Makale]]></item>
+		<item name="blog.entry.nextEntry"><![CDATA[Sonraki Makale]]></item>
+		<item name="blog.entry.noEntries"><![CDATA[Şu anda blog makalesi bulunmamaktadır.]]></item>
+		<item name="blog.entry.notification.mail.html"><![CDATA[<p><strong>{$author}</strong>, blog yazısı <a href="{$entry->getLink()}">{$entry->getTitle()}</a> yazdı:</p>]]></item>
+		<item name="blog.entry.notification.mail.plaintext"><![CDATA[{@$author}, “{@$entry->getTitle()}” başlıklı blog yazısını yazdı [URL:{@$entry->getLink()}]:]]></item>
+		<item name="blog.entry.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazısı <strong>{$entry->getTitle()}</strong> yazdı.]]></item>
+		<item name="blog.entry.notification.title"><![CDATA[Yeni Blog Makalesi]]></item>
+		<item name="blog.entry.previousEntry"><![CDATA[Önceki Makale]]></item>
+		<item name="blog.entry.publication"><![CDATA[Yayın]]></item>
+		<item name="blog.entry.publicationDate"><![CDATA[Yayın Tarihi]]></item>
+		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[Yayın tarihi geçersiz.]]></item>
+		<item name="blog.entry.recentActivity.entry"><![CDATA[Blog yazısını {anchor object=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.recentActivity.entryComment"><![CDATA[Blog yazısına yorum yaptı {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Blog yazısı üzerine {user object=$commentAuthor} tarafından yapılan bir yoruma yanıt verdi {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[Blog yazısına <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> ile tepki gösterdi. {anchor object=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.restore"><![CDATA[Geri Yükle]]></item>
+		<item name="blog.entry.setAsFeatured"><![CDATA[Öne Çıkarılmış Olarak İşaretle]]></item>
+		<item name="blog.entry.sortField.comments"><![CDATA[Yorumlar]]></item>
+		<item name="blog.entry.sortField.cumulativeLikes"><![CDATA[Tepkiler]]></item>
+		<item name="blog.entry.sortField.subject"><![CDATA[Başlık]]></item>
+		<item name="blog.entry.sortField.time"><![CDATA[Tarih]]></item>
+		<item name="blog.entry.sortField.views"><![CDATA[Görüntülemeler]]></item>
+		<item name="blog.entry.trash"><![CDATA[Çöp Kutusuna Taşı]]></item>
+		<item name="blog.entry.trash.confirmMessage"><![CDATA[Bu makaleyi gerçekten çöp kutusuna taşımak istiyor musunuz?]]></item>
+		<item name="blog.entry.trash.reason"><![CDATA[Neden (isteğe bağlı)]]></item>
+		<item name="blog.entry.unreadEntries"><![CDATA[Okunmamış Blog Makaleleri]]></item>
+		<item name="blog.entry.unsetAsFeatured"><![CDATA[Öne Çıkarılmış İşaretini Kaldır]]></item>
+		<item name="blog.entry.userEntries"><![CDATA[{$user->username} tarafından Yazılan Blog Makaleleri]]></item>
+		<item name="blog.entry.views"><![CDATA[Görüntülemeler]]></item>
+		<item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# kez' other='# kez'} okundu]]></item>
+		<item name="blog.entry.watchedEntries"><![CDATA[Abone Olunan Blog Makaleleri]]></item>
+	</category>
+	<category name="blog.index">
+    	<item name="blog.index.stats"><![CDATA[İstatistikler]]></item>
+ 		<item name="blog.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
+<li>{plural value=$stats[authors] one='# Yazar' other='# Yazarlar'}</li>
+<li>{plural value=$stats[entries] one='# Makale' other='# Makaleler'} ({plural value=$stats[entriesPerDay] one='# Makale' other='# Makaleler'} günlük)</li>
+<li>{plural value=$stats[comments] one='# Yorum' other='# Yorumlar'}</li>
+</ul>]]></item>
+	</category>
+	<category name="wcf.acl.option">
+    	<item name="wcf.acl.option.com.woltlab.blog.category.canUseCategory"><![CDATA[Makale oluşturabilir]]></item>
+    	<item name="wcf.acl.option.com.woltlab.blog.category.canViewCategory"><![CDATA[Kategoriyi görebilir]]></item>
+	</category>
+	<category name="wcf.acp.ad">
+		<item name="wcf.acp.ad.location.category.com.woltlab.blog.entry"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.ad.location.com.woltlab.blog.entry.inEntryMessage"><![CDATA[Makale mesajında]]></item>
+	</category>
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.blogList"><![CDATA[Bloglar]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.categories"><![CDATA[Blog Kategorileri]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.commentList"><![CDATA[Blog Yorumları]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.entryList"><![CDATA[Blog Makaleleri]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.tagCloud"><![CDATA[Blog Etiketleri]]></item>
+	</category>
+	<category name="wcf.acp.content">
+		<item name="wcf.acp.content.provider.com.woltlab.blog.blog"><![CDATA[Bloglar]]></item>
+		<item name="wcf.acp.content.provider.com.woltlab.blog.entry"><![CDATA[Blog Makaleleri]]></item>
+	</category>
+	<category name="wcf.acp.cronjob">
+		<item name="wcf.acp.cronjob.description.cronjob27"><![CDATA[Blog makale geri dönüşüm kutusunu boşaltır]]></item>
+		<item name="wcf.acp.cronjob.description.cronjob28"><![CDATA[Ertelemeyle yayınlanmış blog girdilerini yayınlar]]></item>
+	</category>
+	<category name="wcf.acp.dataImport">
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.blog"><![CDATA[Bloglar]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.category"><![CDATA[Blog kategorileri]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry"><![CDATA[Blog makaleleri]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.attachment"><![CDATA[Blog ekleri]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment"><![CDATA[Blog yorumları]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment.response"><![CDATA[Blog yorum yanıtları]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.like"><![CDATA[Blog beğenileri]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.canBeAddedAsBlogAuthor"><![CDATA[Kullanıcı grubu blog yazarı olarak eklenebilir]]></item>
+		<item name="wcf.acp.group.option.admin.blog.canManageCategory"><![CDATA[Kategorileri yönetebilir]]></item>
+		<item name="wcf.acp.group.option.category.admin.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.group.option.category.mod.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.group.option.category.user.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteComment"><![CDATA[Yorumları silebilir]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteEntry"><![CDATA[Blog makalelerini çöp kutusuna taşıyabilir]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteEntryCompletely"><![CDATA[Blog makalelerini silebilir]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canEditComment"><![CDATA[Yorumları düzenleyebilir]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canEditEntry"><![CDATA[Blog makalelerini düzenleyebilir]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canModerateComment"><![CDATA[Yorumları yönetebilir]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canModerateEntry"><![CDATA[Blog makalelerini yönetebilir]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canRestoreEntry"><![CDATA[Silinmiş blog makalelerini geri yükleyebilir]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canViewDeletedEntry"><![CDATA[Silinmiş blog makalelerini görebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canAddComment"><![CDATA[Yorum ekleyebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canAddCommentWithoutModeration"><![CDATA[Onay olmadan yorum ekleyebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canCreateEntry"><![CDATA[Blog makaleleri oluşturabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canCreateEntryWithoutModeration"><![CDATA[Onay olmadan blog makaleleri oluşturabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDeleteComment"><![CDATA[Kendi yorumlarını silebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDeleteEntry"><![CDATA[Kendi blog makalelerini çöp kutusuna taşıyabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDisableCommentFunction"><![CDATA[Kendi blog makalelerinde yorum işlevini devre dışı bırakabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDownloadAttachment"><![CDATA[Ekleri indirebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canEditComment"><![CDATA[Kendi yorumlarını düzenleyebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canEditEntry"><![CDATA[Kendi blog makalelerini düzenleyebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canEditEntryDate"><![CDATA[Blog makale yayımlama tarihini düzenleyebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canReadEntry"><![CDATA[Blog makalelerini okuyabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canRestrictBlogAccess"><![CDATA[Blog erişimini sınırlayabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canSetTags"><![CDATA[Blog makale etiketleri atayabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canStartPoll"><![CDATA[Anketler oluşturabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canStartPublicPoll"><![CDATA[Halka açık anketler oluşturabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canUploadAttachment"><![CDATA[Ekler yükleyebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canViewAttachmentPreview"><![CDATA[Ek önizlemelerini görebilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.canVotePoll"><![CDATA[Anketlere katılabilir]]></item>
+		<item name="wcf.acp.group.option.user.blog.coverPhoto.maxSize"><![CDATA[Maksimum Kapak Fotoğrafı Dosya Boyutu]]></item>
+		<item name="wcf.acp.group.option.user.blog.editTimeout"><![CDATA[Blog Makale Düzenleme Zaman Aşımı Süresi]]></item>
+		<item name="wcf.acp.group.option.user.blog.editTimeout.description"><![CDATA[Kullanıcıların blog makalelerini düzenlemelerine izin verilen dakika. Sınırsız için -1 kullanın.]]></item>
+		<item name="wcf.acp.group.option.user.blog.maxBlogs"><![CDATA[Maksimum Bloglar]]></item>
+		<item name="wcf.acp.group.option.user.blog.maxBlogs.description"><![CDATA[Kullanıcı başına izin verilen maksimum blog sayısı.]]></item>
+		<item name="wcf.acp.group.option.user.blog.maxEntryLength"><![CDATA[Maksimum Blog Makale Uzunluğu]]></item>
+	</category>
+		<category name="wcf.acp.modificationLog">
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.delete"><![CDATA[Blog makalesi silindi]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.disable"><![CDATA[Blog makalesi devre dışı bırakıldı]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.edit"><![CDATA[Blog makalesi düzenlendi]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.enable"><![CDATA[Blog makalesi onaylandı]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.restore"><![CDATA[Blog makalesi geri yüklendi]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.trash"><![CDATA[Blog makalesi çöp kutusuna taşındı]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.blog_entries_per_page"><![CDATA[Sayfa başına blog makalesi]]></item>
+		<item name="wcf.acp.option.blog_entry_default_sort_order"><![CDATA[Sıralama düzeni]]></item>
+		<item name="wcf.acp.option.blog_entry_default_sort_order.description"><![CDATA[Blog makalelerinin varsayılan sıralama düzenini seçin.]]></item>
+		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[Çöp Kutusunu Temizle]]></item>
+		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Blog makaleleri çöp kutusundan belirtilen günler içinde kaldırılır. Devre dışı bırakmak için 0 kullanın.]]></item>
+		<item name="wcf.acp.option.blog_entry_max_categories"><![CDATA[Makale Başına Maksimum Kategori]]></item>
+		<item name="wcf.acp.option.blog_excerpt_length"><![CDATA[Kısa Açıklama Uzunluğu]]></item>
+		<item name="wcf.acp.option.blog_index_enable_stats"><![CDATA[Blog istatistiklerini göster]]></item>
+		<item name="wcf.acp.option.blog_message_sidebar_enable_user_entries"><![CDATA[Yazarın blog makale sayısını göster]]></item>
+		<item name="wcf.acp.option.category.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.option.category.blog.entry"><![CDATA[Blog Makalesi]]></item>
+		<item name="wcf.acp.option.category.blog.index"><![CDATA[Blog İndeksi]]></item>
+	</category>
+	<category name="wcf.acp.pip">
+		<item name="wcf.acp.pip.objectType.com.woltlab.blog.box.blogList.condition.data.title"><![CDATA[Blog Listesi Kutusu Koşul Verileri]]></item>
+		<item name="wcf.acp.pip.objectType.com.woltlab.blog.box.entryList.condition.data.title"><![CDATA[Blog Makalesi Listesi Kutusu Koşul Verileri]]></item>
+		<item name="wcf.acp.pip.objectType.definitionName.com.woltlab.blog.box.blogList.condition.description"><![CDATA[Bu nesne türü tanımı, kutularda gösterilen blogları belirlemek için kullanılan mevcut koşullar/ayarları kaydeder.]]></item>
+		<item name="wcf.acp.pip.objectType.definitionName.com.woltlab.blog.box.entryList.condition.description"><![CDATA[Bu nesne türü tanımı, kutularda gösterilen blog makalelerini belirlemek için kullanılan mevcut koşullar/ayarları kaydeder.]]></item>
+	</category>
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.blog_system_worker_BlogEntryRebuildDataWorker"><![CDATA[Blog Makaleleri Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.blog_system_worker_BlogEntryRebuildDataWorker.description"><![CDATA[Blog makaleleri arama dizinini yeniden oluşturur ve etkinlik puanlarını yeniden hesaplar.]]></item>
+		<item name="wcf.acp.rebuildData.blog_system_worker_BlogRebuildDataWorker"><![CDATA[Blogları Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.blog_system_worker_BlogRebuildDataWorker.description"><![CDATA[Blog istatistiklerini yeniden oluşturur.]]></item>
+	</category>
+	<category name="wcf.acp.sitemap">
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.blog.sitemap.object.blog"><![CDATA[Bloglar]]></item>
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.blog.sitemap.object.category"><![CDATA[Blog Kategorileri]]></item>
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.blog.sitemap.object.entry"><![CDATA[Blog Makaleleri]]></item>
+	</category>
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.category.com.woltlab.blog"><![CDATA[WoltLab Suite Blog]]></item>
+		<item name="wcf.acp.stat.com.woltlab.blog.entry"><![CDATA[Blog Makaleleri]]></item>
+		<item name="wcf.acp.stat.com.woltlab.blog.entryComment"><![CDATA[Blog Makale Yorumları]]></item>
+	</category>
+	<category name="wcf.like">
+		<item name="wcf.like.objectType.com.woltlab.blog.likeableEntry"><![CDATA[Blog Yazısı]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.entryComment"><![CDATA[{@$reaction->render()} tepkisi, {if $commentAuthor}{user object=$commentAuthor}{else}bir misafir{/if}'in blog yazısına yapılan yoruma verildi {anchor link=$comment content=$entry}.]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.entryComment.response"><![CDATA[{@$reaction->render()} tepkisi, {if $responseAuthor}{user object=$responseAuthor}{else}bir misafir{/if}'in {if $commentAuthor}{user object=$commentAuthor}{else}bir misafir{/if}'in blog yazısına yapılan yoruma verdiği yanıta verildi {anchor link=$response content=$entry}.]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.likeableEntry"><![CDATA[{@$reaction->render()} tepkisi, blog yazısına verildi {anchor object=$entry class='blogEntryLink'}.]]></item>
+	</category>
+	<category name="wcf.menu">
+		<item name="wcf.menu.item.com.woltlab.blog.BlogList"><![CDATA[Blog]]></item>
+		<item name="wcf.menu.item.com.woltlab.blog.EntryList"><![CDATA[Makaleler]]></item>
+		<item name="wcf.menu.item.com.woltlab.blog.MyBlogList"><![CDATA[Benim Bloglarım]]></item>
+		<item name="wcf.menu.item.com.woltlab.blog.MyEntryList"><![CDATA[Benim Makalelerim]]></item>
+		<item name="wcf.menu.item.com.woltlab.blog.UnreadEntryList"><![CDATA[Okunmamış Makaleler]]></item>
+		<item name="wcf.menu.item.com.woltlab.blog.WatchedEntryList"><![CDATA[Takip Edilen Makaleler]]></item>
+	</category>
+	<category name="wcf.moderation">
+		<item name="wcf.moderation.deletedContent.com.woltlab.blog.entry"><![CDATA[Silinmiş Blog Makaleleri]]></item>
+		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.blog.entry"><![CDATA[Blog Makaleleri]]></item>
+		<item name="wcf.moderation.type.com.woltlab.blog.entry"><![CDATA[Blog Makalesi]]></item>
+	</category>
+	<category name="wcf.page">
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.BlogEntryList"><![CDATA[Blogdaki makaleler {anchor object=$blog}]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.CategoryEntryList"><![CDATA[Kategorideki blog makaleleri {anchor object=$category}]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.Entry"><![CDATA[Blog makalesi {anchor object=$entry class='blogEntryLink'}]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.EntryEdit"><![CDATA[Blog makalesini düzenle {anchor object=$entry class='blogEntryLink'}]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.UserEntryList"><![CDATA[<a href="{link controller='UserEntryList' application='blog' object=$user}{/link}">{$user->username} tarafından yazılan blog makaleleri</a>]]></item>
+		<item name="wcf.page.pageObjectID.com.woltlab.blog.BlogEntryList"><![CDATA[Blogun Kimliği]]></item>
+		<item name="wcf.page.pageObjectID.com.woltlab.blog.CategoryEntryList"><![CDATA[Kategorinin Kimliği]]></item>
+		<item name="wcf.page.pageObjectID.com.woltlab.blog.Entry"><![CDATA[Makalenin Kimliği]]></item>
+		<item name="wcf.page.pageObjectID.com.woltlab.blog.UserEntryList"><![CDATA[Kullanıcının Kimliği]]></item>
+		<item name="wcf.page.pageObjectID.search.com.woltlab.blog.BlogEntryList"><![CDATA[Blog Başlıklarında Ara]]></item>
+		<item name="wcf.page.pageObjectID.search.com.woltlab.blog.CategoryEntryList"><![CDATA[Kategori Başlıklarında Ara]]></item>
+		<item name="wcf.page.pageObjectID.search.com.woltlab.blog.Entry"><![CDATA[Makale Başlıklarında Ara]]></item>
+		<item name="wcf.page.pageObjectID.search.com.woltlab.blog.UserEntryList"><![CDATA[Kullanıcı Adlarında Ara]]></item>
+	</category>
+	<category name="wcf.search">
+		<item name="wcf.search.object.com.woltlab.blog.entry"><![CDATA[Blog Makalesi]]></item>
+		<item name="wcf.search.type.com.woltlab.blog.entry"><![CDATA[Blog Makaleleri]]></item>
+	</category>
+	<category name="wcf.tagging">
+		<item name="wcf.tagging.combinedTaggedObjects.com.woltlab.blog.entry"><![CDATA[Etiketlenen Blog Makaleleri]]></item>
+		<item name="wcf.tagging.objectType.com.woltlab.blog.entry"><![CDATA[Blog Makaleleri]]></item>
+		<item name="wcf.tagging.taggedObjects.com.woltlab.blog.entry"><![CDATA["{$tag->name}" etiketi ile etiketlenen Blog Makaleleri]]></item>
+	</category>
+		<category name="wcf.user">
+		<item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[Blog Makaleleri]]></item>
+		<item name="wcf.user.boxList.description.blogEntries"><![CDATA[{plural value=$boxUser->blogEntries one='# Blog Makalesi' other='# Blog Makalesi'}]]></item>
+		<item name="wcf.user.sortField.blogEntries"><![CDATA[Blog Makaleleri]]></item>
+	</category>
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.blogEntries"><![CDATA[Blog Makaleleri]]></item>
+		<item name="wcf.user.condition.blogs"><![CDATA[Bloglar]]></item>
+	</category>
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.woltlab.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.entry"><![CDATA[Takip ettiğim bloglarda veya kategorilerde yeni makalelerden beni haberdar et]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.mention"><![CDATA[Beni bahsedildiğimde haberdar et]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.like.notification.like"><![CDATA[Yorumlarıma birisi tepki gösterdiğinde beni haberdar et]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.notification.comment"><![CDATA[Blog makalelerimde yeni yorumlardan beni haberdar et]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.like.notification.like"><![CDATA[Yorum cevaplarıma birisi tepki gösterdiğinde beni haberdar et]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponse"><![CDATA[Yorumlarıma gelen yeni cevaplardan beni haberdar et]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponseOwner"><![CDATA[Blog makalelerimdeki yorumlara gelen cevaplardan beni haberdar et]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.likeableEntry.notification.like"><![CDATA[Blog makalelerime birisi tepki gösterdiğinde beni haberdar et]]></item>
+	</category>
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.menu.blogs"><![CDATA[Bloglar]]></item>
+	</category>
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.recentActivityEvent"><![CDATA[Yorum (Blog Makalesi)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.response.recentActivityEvent"><![CDATA[Yorum Cevabı (Blog Makalesi)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.likeableEntry.recentActivityEvent"><![CDATA[Tepki (Blog Makalesi)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.recentActivityEvent.entry"><![CDATA[Blog Makalesi]]></item>
+	</category>
+	<category name="shadow.invalid.page">
+		<item name="shadow.invalid.page.com.woltlab.blog.BlogAdd.title"><![CDATA[Blog Oluştur]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.BlogEdit.title"><![CDATA[Blog Düzenle]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.BlogList.title"><![CDATA[Blog]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.EntryAdd.title"><![CDATA[Makale Oluştur]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.EntryEdit.title"><![CDATA[Makale Düzenle]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.EntryList.title"><![CDATA[Makaleler]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.MyBlogList.title"><![CDATA[Benim Bloglarım]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.MyEntryList.title"><![CDATA[Benim Makalelerim]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.UnreadEntryList.title"><![CDATA[Okunmamış Makaleler]]></item>
+		<item name="shadow.invalid.page.com.woltlab.blog.WatchedEntryList.title"><![CDATA[Takip Edilen Makaleler]]></item>
+	</category>
+	<category name="shadow.invalid.box">
+		<item name="shadow.invalid.box.com.woltlab.blog.Categories.title"><![CDATA[Kategoriler]]></item>
+		<item name="shadow.invalid.box.com.woltlab.blog.FeaturedArticles.title"><![CDATA[Öne Çıkan Makaleler]]></item>
+		<item name="shadow.invalid.box.com.woltlab.blog.LatestEntries.title"><![CDATA[En Son Makaleler]]></item>
+		<item name="shadow.invalid.box.com.woltlab.blog.MostCommentedEntries.title"><![CDATA[En Çok Yorum Alan Makaleler]]></item>
+		<item name="shadow.invalid.box.com.woltlab.blog.TagCloud.title"><![CDATA[Etiket Bulutu]]></item>
+		<item name="shadow.invalid.box.com.woltlab.blog.TopBlogs.title"><![CDATA[En İyi Bloglar]]></item>
+	</category>
+</language>
