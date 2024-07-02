@@ -78,10 +78,10 @@
 		<item name="blog.entry.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList}, “{@$entry->getTitle()}” başlıklı blog yazınızdaki yorumunuza yanıt verdi [URL:{@$entry->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
 		<item name="blog.entry.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if}, <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumunuza yanıt verdi.]]></item>
 		<item name="blog.entry.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumunuza yanıt verdi.]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList}, <strong>{$commentAuthor}</strong>’ün <a href="{$entry->getLink()}#comment{@$commentID}/response{@$responseID}">{$entry->getTitle()}</a> başlıklı blog yazınızdaki yorumuna yanıt verdi:</p>]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList}, {@$commentAuthor}’ün “{@$entry->getTitle()}” başlıklı blog yazınızdaki yorumuna yanıt verdi [URL:{@$entry->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if}, <strong>{$commentAuthor->username}</strong>’ün <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumuna yanıt verdi.]]></item>
-		<item name="blog.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, <strong>{$author->username}</strong>’ün <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumuna yanıt verdi.]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList}, <strong>{$commentAuthor}</strong> adlı kullanıcının <a href="{$entry->getLink()}#comment{@$commentID}/response{@$responseID}">{$entry->getTitle()}</a> başlıklı blog yazınızdaki yorumuna yanıt verdi:</p>]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList}, {@$commentAuthor} adlı kullanıcının “{@$entry->getTitle()}” başlıklı blog yazınızdaki yorumuna yanıt verdi [URL:{@$entry->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if}, <strong>{$commentAuthor->username}</strong> adlı kullanıcının <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumuna yanıt verdi.]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, <strong>{$author->username}</strong> adlı kullanıcının <strong>{$entry->getTitle()}</strong> başlıklı blog yazınızdaki yorumuna yanıt verdi.]]></item>
 		<item name="blog.entry.comments"><![CDATA[Yorumlar]]></item>
 		<item name="blog.entry.comments.count"><![CDATA[{plural value=$entry->comments one='# Yorum' other='# Yorumlar'}]]></item>
 		<item name="blog.entry.condition.blog"><![CDATA[Blog]]></item>
@@ -132,10 +132,10 @@
 		<item name="blog.entry.publication"><![CDATA[Yayın]]></item>
 		<item name="blog.entry.publicationDate"><![CDATA[Yayın Tarihi]]></item>
 		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[Yayın tarihi geçersiz.]]></item>
-		<item name="blog.entry.recentActivity.entry"><![CDATA[Blog yazısını {anchor object=$entry class='blogEntryLink'}.]]></item>
-		<item name="blog.entry.recentActivity.entryComment"><![CDATA[Blog yazısına yorum yaptı {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
-		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Blog yazısı üzerine {user object=$commentAuthor} tarafından yapılan bir yoruma yanıt verdi {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
-		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[Blog yazısına <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> ile tepki gösterdi. {anchor object=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.recentActivity.entry"><![CDATA[{anchor object=$entry class='blogEntryLink'} Blog makalesini yazdı.]]></item>
+		<item name="blog.entry.recentActivity.entryComment"><![CDATA[{anchor link=$comment content=$entry class='blogEntryLink'} Blog yazısına yorum yaptı.]]></item>
+		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[{anchor link=$response content=$entry class='blogEntryLink'} Blog yazısına {user object=$commentAuthor} tarafından yapılan bir yoruma yanıt verdi.]]></item>
+		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[{anchor object=$entry class='blogEntryLink'} Blog yazısına <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> ile tepki gösterdi.]]></item>
 		<item name="blog.entry.restore"><![CDATA[Geri Yükle]]></item>
 		<item name="blog.entry.setAsFeatured"><![CDATA[Öne Çıkarılmış Olarak İşaretle]]></item>
 		<item name="blog.entry.sortField.comments"><![CDATA[Yorumlar]]></item>
