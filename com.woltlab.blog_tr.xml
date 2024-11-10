@@ -130,10 +130,10 @@
 		<item name="blog.entry.publication"><![CDATA[Yayın]]></item>
 		<item name="blog.entry.publicationDate"><![CDATA[Yayın Tarihi]]></item>
 		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[Yayın tarihi geçersiz.]]></item>
-		<item name="blog.entry.recentActivity.entry"><![CDATA[{anchor object=$entry class='blogEntryLink'} Blog makalesini yazdı.]]></item>
-		<item name="blog.entry.recentActivity.entryComment"><![CDATA[{anchor link=$comment content=$entry class='blogEntryLink'} Blog yazısına yorum yaptı.]]></item>
-		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[{anchor link=$response content=$entry class='blogEntryLink'} Blog yazısına {user object=$commentAuthor} tarafından yapılan bir yoruma yanıt verdi.]]></item>
-		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[{anchor object=$entry class='blogEntryLink'} Blog yazısına <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> ile tepki gösterdi.]]></item>
+		<item name="blog.entry.recentActivity.entry"><![CDATA[<strong>{$author}</strong>, <strong>{$entry->getTitle()}</strong> adlı blog makalesini yazdı.]]></item>
+		<item name="blog.entry.recentActivity.entryComment"><![CDATA[<strong>{$author}</strong>, <strong>{$entry->getTitle()}</strong> adlı blog yazısına yorum yaptı.]]></item>
+		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[<strong>{$author}</strong>, <strong>{$entry->getTitle()}</strong> adlı blog yazısına <strong>{$commentAuthor}</strong> tarafından yapılan bir yoruma yanıt verdi.]]></item>
+		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[<strong>{$author}</strong>, <strong>{$entry->getTitle()}</strong> adlı blog yazısına <span title="{$reactionType->getTitle()}" class="jsTooltip">{unsafe:$reactionType->renderIcon()}</span> ile tepki gösterdi.]]></item>
 		<item name="blog.entry.restore"><![CDATA[Geri Yükle]]></item>
 		<item name="blog.entry.setAsFeatured"><![CDATA[Öne Çıkarılmış Olarak İşaretle]]></item>
 		<item name="blog.entry.sortField.comments"><![CDATA[Yorumlar]]></item>
