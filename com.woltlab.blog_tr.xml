@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Türkçe" countrycode="tr">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.0/language.xsd" languagecode="tr" languagename="Türkçe" countrycode="tr">
 	<category name="blog.acp.menu">
 		<item name="blog.acp.menu.link.blog"><![CDATA[Blog]]></item>
 		<item name="blog.acp.menu.link.blog.category.add"><![CDATA[Kategori Ekle]]></item>
@@ -57,12 +57,11 @@
 		<item name="blog.entry.button.add"><![CDATA[Makale Oluştur]]></item>
 		<item name="blog.entry.button.publish"><![CDATA[Yayımla]]></item>
 		<item name="blog.entry.button.saveAsDraft"><![CDATA[Taslak Olarak Kaydet]]></item>
-		<item name="blog.entry.categories"><![CDATA[Kategoriler]]></item>
 		<item name="blog.entry.categories.error.tooMany"><![CDATA[Çok fazla kategori seçtiniz. En fazla {@BLOG_ENTRY_MAX_CATEGORIES} {if BLOG_ENTRY_MAX_CATEGORIES == 1}kategori{else}kategori{/if} seçebilirsiniz.]]></item>
 		<item name="blog.entry.categorizedEntries"><![CDATA[“{$category->getTitle()}” Kategorisindeki Blog Yazıları]]></item>
 		<item name="blog.entry.comment"><![CDATA[Blog Yazısı Yorumu]]></item>
-		<item name="blog.entry.comment.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.comment.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
+		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
 		<item name="blog.entry.comment.like.notification.title"><![CDATA[Yorumunuza tepki (Blog Yazısı)]]></item>
 		<item name="blog.entry.comment.like.notification.title.stacked"><![CDATA[{#$count} kullanıcı yorumunuza tepki verdi (Blog Yazısı)]]></item>
 		<item name="blog.entry.comment.notification.mail.html"><![CDATA[<p>{@$authorList}, <a href="{$entry->getLink()}#comment{@$commentID}">{$entry->getTitle()}</a> başlıklı blog yazınıza yorum yaptı:</p>]]></item>
@@ -70,8 +69,8 @@
 		<item name="blog.entry.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if}, <strong>{$entry->getTitle()}</strong> başlıklı blog yazınıza yorum yaptı.]]></item>
 		<item name="blog.entry.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, <strong>{$entry->getTitle()}</strong> başlıklı blog yazınıza yorum yaptı.]]></item>
 		<item name="blog.entry.commentResponse"><![CDATA[Yorumunuza Yanıt]]></item>
-		<item name="blog.entry.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza verdiğiniz yanıta tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-		<item name="blog.entry.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza verdiğiniz yanıta tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza verdiğiniz yanıta ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınızdaki <strong>{$entry->getTitle()}</strong> başlıklı yorumunuza verdiğiniz yanıta ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
 		<item name="blog.entry.commentResponse.like.notification.title"><![CDATA[Yanıtınıza tepki (Blog Yazısı)]]></item>
 		<item name="blog.entry.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} kullanıcı yanıtınıza tepki verdi (Blog Yazısı)]]></item>
 		<item name="blog.entry.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList}, <a href="{$entry->getLink()}#comment{@$commentID}/response{@$responseID}">{$entry->getTitle()}</a> başlıklı blog yazınızdaki yorumunuza yanıt verdi:</p>]]></item>
@@ -109,8 +108,8 @@
 		<item name="blog.entry.hasOldVersions"><![CDATA[Bu blog yazısının kaydedilmiş önceki sürümleri bulunmaktadır.]]></item>
 		<item name="blog.entry.information"><![CDATA[Bilgi]]></item>
 		<item name="blog.entry.label.readMore"><![CDATA[Devamını oku [readmore]]]></item>
-		<item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınız <strong>{$entry->getTitle()}</strong> hakkında tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-		<item name="blog.entry.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınız <strong>{$entry->getTitle()}</strong> hakkında tepki verdi ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazınız <strong>{$entry->getTitle()}</strong> hakkında ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
+		<item name="blog.entry.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, blog yazınız <strong>{$entry->getTitle()}</strong> hakkında ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
 		<item name="blog.entry.like.notification.title"><![CDATA[Blog yazınıza tepki]]></item>
 		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} kullanıcı blog yazınıza tepki verdi]]></item>
 		<item name="blog.entry.log.trash.summary"><![CDATA[Giriş, {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} aşağıdaki nedenle silindi: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
@@ -123,7 +122,6 @@
 		<item name="blog.entry.moderation.redirect"><![CDATA[Makaleniz oluşturuldu ve onaylandıktan sonra gösterilecektir.]]></item>
 		<item name="blog.entry.moreEntries"><![CDATA[Daha Fazla Makale]]></item>
 		<item name="blog.entry.nextEntry"><![CDATA[Sonraki Makale]]></item>
-		<item name="blog.entry.noEntries"><![CDATA[Şu anda blog makalesi bulunmamaktadır.]]></item>
 		<item name="blog.entry.notification.mail.html"><![CDATA[<p><strong>{$author}</strong>, blog yazısı <a href="{$entry->getLink()}">{$entry->getTitle()}</a> yazdı:</p>]]></item>
 		<item name="blog.entry.notification.mail.plaintext"><![CDATA[{@$author}, “{@$entry->getTitle()}” başlıklı blog yazısını yazdı [URL:{@$entry->getLink()}]:]]></item>
 		<item name="blog.entry.notification.message"><![CDATA[<strong>{$author}</strong>, blog yazısı <strong>{$entry->getTitle()}</strong> yazdı.]]></item>
@@ -132,10 +130,10 @@
 		<item name="blog.entry.publication"><![CDATA[Yayın]]></item>
 		<item name="blog.entry.publicationDate"><![CDATA[Yayın Tarihi]]></item>
 		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[Yayın tarihi geçersiz.]]></item>
-		<item name="blog.entry.recentActivity.entry"><![CDATA[{anchor object=$entry class='blogEntryLink'} Blog makalesini yazdı.]]></item>
-		<item name="blog.entry.recentActivity.entryComment"><![CDATA[{anchor link=$comment content=$entry class='blogEntryLink'} Blog yazısına yorum yaptı.]]></item>
-		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[{anchor link=$response content=$entry class='blogEntryLink'} Blog yazısına {user object=$commentAuthor} tarafından yapılan bir yoruma yanıt verdi.]]></item>
-		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[{anchor object=$entry class='blogEntryLink'} Blog yazısına <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> ile tepki gösterdi.]]></item>
+		<item name="blog.entry.recentActivity.entry"><![CDATA[<strong>{$author}</strong>, <strong>{$entry->getTitle()}</strong> adlı blog makalesini yazdı.]]></item>
+		<item name="blog.entry.recentActivity.entryComment"><![CDATA[<strong>{$author}</strong>, <strong>{$entry->getTitle()}</strong> adlı blog yazısına yorum yaptı.]]></item>
+		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[<strong>{$author}</strong>, <strong>{$entry->getTitle()}</strong> adlı blog yazısına <strong>{$commentAuthor}</strong> tarafından yapılan bir yoruma yanıt verdi.]]></item>
+		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[<strong>{$author}</strong>, <strong>{$entry->getTitle()}</strong> adlı blog yazısına <span title="{$reactionType->getTitle()}" class="jsTooltip">{unsafe:$reactionType->renderIcon()}</span> ile tepki gösterdi.]]></item>
 		<item name="blog.entry.restore"><![CDATA[Geri Yükle]]></item>
 		<item name="blog.entry.setAsFeatured"><![CDATA[Öne Çıkarılmış Olarak İşaretle]]></item>
 		<item name="blog.entry.sortField.comments"><![CDATA[Yorumlar]]></item>
@@ -181,8 +179,8 @@
 		<item name="wcf.acp.content.provider.com.woltlab.blog.entry"><![CDATA[Blog Makaleleri]]></item>
 	</category>
 	<category name="wcf.acp.cronjob">
-		<item name="wcf.acp.cronjob.description.cronjob27"><![CDATA[Blog makale geri dönüşüm kutusunu boşaltır]]></item>
-		<item name="wcf.acp.cronjob.description.cronjob28"><![CDATA[Ertelemeyle yayınlanmış blog girdilerini yayınlar]]></item>
+		<item name="wcf.acp.cronjob.description.cronjob29"><![CDATA[Blog makale geri dönüşüm kutusunu boşaltır]]></item>
+		<item name="wcf.acp.cronjob.description.cronjob30"><![CDATA[Ertelemeyle yayınlanmış blog girdilerini yayınlar]]></item>
 	</category>
 	<category name="wcf.acp.dataImport">
 		<item name="wcf.acp.dataImport.data.com.woltlab.blog.blog"><![CDATA[Bloglar]]></item>
@@ -321,7 +319,7 @@
 		<item name="wcf.tagging.objectType.com.woltlab.blog.entry"><![CDATA[Blog Makaleleri]]></item>
 		<item name="wcf.tagging.taggedObjects.com.woltlab.blog.entry"><![CDATA["{$tag->name}" etiketi ile etiketlenen Blog Makaleleri]]></item>
 	</category>
-		<category name="wcf.user">
+	<category name="wcf.user">
 		<item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[Blog Makaleleri]]></item>
 		<item name="wcf.user.boxList.description.blogEntries"><![CDATA[{plural value=$boxUser->blogEntries one='# Blog Makalesi' other='# Blog Makalesi'}]]></item>
 		<item name="wcf.user.sortField.blogEntries"><![CDATA[Blog Makaleleri]]></item>
